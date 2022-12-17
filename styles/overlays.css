@@ -1,0 +1,31 @@
+/*mobile screen */ 
+.modal {        
+    position: fixed;    /* relative to ancestor el page nfsha  */ 
+    top: 20%;   /* <percentage>s of the height of the containing block (parent),  relative to ancestor*/
+    left: 5%;   /* <percentage>s of the width of the containing block + width el modal  */
+    width: 90%;
+    background-color:white;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+  
+  #backdrop {
+    position: fixed;    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+  }
+  
+  /*desktop view */
+  @media (min-width: 48rem) { 
+    .modal {
+      /* automatically inherit properties in modal class el fo2 w enta bt3ml override ll 3awz t8yro bs */ 
+      left: calc(50% - 20rem);  /* to center modal (50%- half of modal's width) */ 
+      width: 40rem;
+    }
+  }
